@@ -1,0 +1,710 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "meld-encrypt",
+        "version": "1.0.0",
+        "title": "Meld Encrypt",
+        "description": "Meld Encrypt Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "2.4.5",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "placeholder",
+                    "source": "Enter one relative path per line",
+                    "target": "每行输入一个相对路径"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "placeholder",
+                    "source": "Password Hint",
+                    "target": "密码提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "External File",
+                    "target": "外部文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "File",
+                    "target": "文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Folder",
+                    "target": "文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Vault",
+                    "target": "保险库"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "table",
+                    "target": "table"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "tr",
+                    "target": "tr"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "th",
+                    "target": "th"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "td",
+                    "target": "td"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "passwordAndHint == null",
+                    "target": "passwordAndHint == null"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving is in progress, but forcing another save because the file is being unloaded",
+                    "target": "保存正在进行中，但由于文件正在卸载，强制另存一次"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "View data will not be set because file is null",
+                    "target": "由于文件为空，不会设置视图数据"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "View is being set with already encoded data, trying to decode",
+                    "target": "视图正在使用已编码的数据进行设置，尝试解码"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "View was being set with already encoceded data but the decryption failed, closing view",
+                    "target": "视图正在使用已编码的数据进行设置，但解密失败，关闭视图"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving was prevented because another save is in progress, Obsidian will try again later if the content changed.",
+                    "target": "由于另一次保存正在进行中，保存被阻止，如果内容发生变化，Obsidian 将稍后再次尝试保存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving was prevented beacuse there is no file loaded in the view yet",
+                    "target": "由于视图中尚未加载文件，保存被阻止"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving was prevented because the file is not an encrypted file",
+                    "target": "由于文件不是加密文件，保存被阻止"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving was prevented because the file was not yet loaded with a password",
+                    "target": "由于文件尚未使用密码加载，保存被阻止"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving was prevented because it was explicitly disabled",
+                    "target": "由于显式禁用，保存被阻止"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving was prevented beacuse there is no password set",
+                    "target": "保存被阻止，因为没有设置密码"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving was prevented beacuse the data was already encoded but it was expected to not be",
+                    "target": "保存被阻止，因为数据已经编码，但预期未被编码"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Saving was prevented because the data was not changed",
+                    "target": "保存被阻止，因为数据未更改"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "info",
+                    "source": "Unable to change password beacuse there is no file loaded in the view yet",
+                    "target": "无法更改密码，因为视图中尚未加载文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Save",
+                    "target": "保存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Copy",
+                    "target": "复制"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Decrypt in-place",
+                    "target": "就地解密"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Confirm",
+                    "target": "确认"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Confirm password when encrypting. (Recommended)",
+                    "target": "加密时确认密码。 (推荐)"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Remember the last used passwords when encrypting or decrypting.  Passwords are remembered until they timeout or Obsidian is closed",
+                    "target": "加密或解密时记住上次使用的密码。 密码将在超时或 Obsidian 关闭时被忘记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The number of minutes to remember passwords.",
+                    "target": "记住密码的分钟数。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When needed the password is read from one of these filepaths. Paths must be relative to vault root",
+                    "target": "在需要时从这些文件路径之一读取密码。路径必须相对于保险库根目录。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Passwords don't match",
+                    "target": "密码不匹配"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Partial selections will get expanded to the whole line.",
+                    "target": "部分选择将扩展为整行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "How far to look for markers when encrypting/decrypting.",
+                    "target": "在加密/解密时查找标记的距离。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "When encrypting inline text, should the default be to have a visible marker in Reading view?",
+                    "target": "在行内文本加密时，是否默认在阅读视图中显示标记？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Confirm password?",
+                    "target": "确认密码？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Remember password?",
+                    "target": "记住密码？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Remember passwords by:",
+                    "target": "按以下方式记住密码："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "External File Paths",
+                    "target": "外部文件路径"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Optional Password Hint",
+                    "target": "可选密码提示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show encrypted marker in Reading view",
+                    "target": "在阅读视图中显示加密标记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Text to encrypt",
+                    "target": "要加密的文本"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "In-place encryption",
+                    "target": "原地加密"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Expand selection to whole line?",
+                    "target": "扩展选择到整行？"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Search limit for markers",
+                    "target": "标记搜索限制"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "By default, show encrypted marker when reading",
+                    "target": "默认在阅读时显示加密标记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "🔐",
+                    "target": "🔐"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Encrypt note",
+                    "target": "加密笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Decrypt note",
+                    "target": "解密笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "New encrypted note",
+                    "target": "新建加密笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Change Password",
+                    "target": "更改密码"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Lock & Close",
+                    "target": "锁定并关闭"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Check Paths",
+                    "target": "检查路径"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "External password file not found",
+                    "target": "外部密码文件未找到"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copied!",
+                    "target": "已复制！"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "❌ Decryption failed!",
+                    "target": "❌ 解密失败！"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please select text to encrypt.",
+                    "target": "请选择要加密的文本。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please select text to decrypt or place cursor on encrypted text.",
+                    "target": "请选择要解密的文本或在加密文本上放置光标。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Unable to Encrypt that.",
+                    "target": "无法加密。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Unable to Decrypt that.",
+                    "target": "无法解密。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Decryption failed",
+                    "target": "解密失败"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Password changed",
+                    "target": "密码已更改"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Password wasn't changed",
+                    "target": "密码未更改"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "🔐 Note was encrypted 🔐",
+                    "target": "🔐 笔记已加密 🔐"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "🔓 Note was decrypted 🔓",
+                    "target": "🔓 笔记已解密 🔓"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Password:",
+                    "target": "密码:"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Confirm Password:",
+                    "target": "确认密码:"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Encrypt Selection",
+                    "target": "加密选中内容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Decrypt",
+                    "target": "解密"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Convert to or from an Encrypted note",
+                    "target": "转换为或重新加密笔记转换"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create new encrypted note",
+                    "target": "创建新的加密笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Lock and Close all open encrypted notes",
+                    "target": "锁定并关闭所有打开的加密笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Clear Session Password Cache",
+                    "target": "清除会话密码缓存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Vault:",
+                    "target": "保险库:"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Typically, you'll use the same password every time.",
+                    "target": "通常，您每次都会使用相同的密码。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Folder:",
+                    "target": "文件夹:"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Typically, you'll use the same password for each note within a folder.",
+                    "target": "通常，您会在文件夹内的每个笔记中使用相同的密码。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "File:",
+                    "target": "文件:"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Typically, each note will have a unique password.",
+                    "target": "通常，每个笔记都会有唯一的密码。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "External File:",
+                    "target": "外部文件:"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "When needed the password/key is read from one of these filepaths.",
+                    "target": "需要时，密码/密钥从这些文件路径之一读取。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "🔐",
+                    "target": "🔐"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Confirm password?\")",
+                    "target": "setName(\"确认密码？\")"
+                },
+                {
+                    "source": "setDesc(\"Confirm password when encrypting. (Recommended)\")",
+                    "target": "setDesc(\"加密时确认密码。 (推荐)\")"
+                },
+                {
+                    "source": "setName(`Remember Password (${i})`)",
+                    "target": "setName(`记住密码 (${i})`)"
+                },
+                {
+                    "source": "setName(\"Remember password?\")",
+                    "target": "setName(\"记住密码？\")"
+                },
+                {
+                    "source": "setDesc(\"Remember the last used passwords when encrypting or decrypting.  Passwords are remembered until they timeout or Obsidian is closed\")",
+                    "target": "setDesc(\"在加密或解密时记住上次使用的密码。密码会在超时或 Obsidian 关闭时被忘记。\")"
+                },
+                {
+                    "source": "setName(\"Remember passwords by:\")",
+                    "target": "setName(\"记住密码方式：\")"
+                },
+                {
+                    "source": "setDesc(\"The number of minutes to remember passwords.\")",
+                    "target": "setDesc(\"记住密码的分钟数。\")"
+                },
+                {
+                    "source": "setName(\"External File Paths\")",
+                    "target": "setName(\"外部文件路径\")"
+                },
+                {
+                    "source": "setDesc(\"When needed the password is read from one of these filepaths. Paths must be relative to vault root\")",
+                    "target": "setDesc(\"需要时从这些文件路径读取密码。路径必须相对于保险库根目录。\")"
+                },
+                {
+                    "source": "setTooltip(\"Check Paths\")",
+                    "target": "setTooltip(\"检查路径\")"
+                },
+                {
+                    "source": "setButtonText(\"Decrypt in-place\")",
+                    "target": "setButtonText(\"原地解密\")"
+                },
+                {
+                    "source": "setName(\"Optional Password Hint\")",
+                    "target": "setName(\"可选密码提示\")"
+                },
+                {
+                    "source": "setName(\"Show encrypted marker in Reading view\")",
+                    "target": "setName(\"在阅读视图中显示加密标记\")"
+                },
+                {
+                    "source": "setName(\"Text to encrypt\")",
+                    "target": "setName(\"要加密的文本\")"
+                },
+                {
+                    "source": "setDesc(\"Passwords don't match\")",
+                    "target": "setDesc(\"密码不匹配\")"
+                },
+                {
+                    "source": "setName(\"In-place encryption\")",
+                    "target": "setName(\"原地加密\")"
+                },
+                {
+                    "source": "setName(\"Expand selection to whole line?\")",
+                    "target": "setName(\"扩展选择到整行？\")"
+                },
+                {
+                    "source": "setDesc(\"Partial selections will get expanded to the whole line.\")",
+                    "target": "setDesc(\"部分选择将扩展到整行。\")"
+                },
+                {
+                    "source": "setName(\"Search limit for markers\")",
+                    "target": "setName(\"标记搜索限制\")"
+                },
+                {
+                    "source": "setDesc(\"How far to look for markers when encrypting/decrypting.\")",
+                    "target": "setDesc(\"加密/解密时查找标记的距离。\")"
+                },
+                {
+                    "source": "setName(\"By default, show encrypted marker when reading\")",
+                    "target": "setName(\"默认情况下，在阅读时显示加密标记\")"
+                },
+                {
+                    "source": "setDesc(\"When encrypting inline text, should the default be to have a visible marker in Reading view?\")",
+                    "target": "setDesc(\"在加密内嵌文本时，默认是否在阅读视图中显示可见标记？\")"
+                },
+                {
+                    "source": "Notice(\"Please select text to encrypt.\")",
+                    "target": "Notice(\"请选择要加密的文本。\")"
+                },
+                {
+                    "source": "Notice(\"Please select text to decrypt or place cursor on encrypted text.\")",
+                    "target": "Notice(\"请选择要解密的文本或在加密文本上放置光标。\")"
+                },
+                {
+                    "source": "Notice(`Nothing to ${r==\"encrypt\"?\"Encrypt\":\"Decrypt\"}.`)",
+                    "target": "Notice(`Nothing to ${r==\"encrypt\"?\"Encrypt\":\"Decrypt\"}.`)"
+                },
+                {
+                    "source": "Notice(\"Unable to Encrypt that.\")",
+                    "target": "Notice(\"无法加密该内容。\")"
+                },
+                {
+                    "source": "Notice(\"Unable to Decrypt that.\")",
+                    "target": "Notice(\"无法解密该内容。\")"
+                },
+                {
+                    "source": "Notice(\"Decryption failed\")",
+                    "target": "Notice(\"解密失败\")"
+                },
+                {
+                    "source": "error(\"passwordAndHint == null\")",
+                    "target": "error(\"passwordAndHint == null\")"
+                },
+                {
+                    "source": "Notice(\"Password changed\")",
+                    "target": "Notice(\"密码已更改\")"
+                },
+                {
+                    "source": "Notice(\"Password wasn't changed\")",
+                    "target": "Notice(\"密码未更改\")"
+                },
+                {
+                    "source": "setTitle(\"Encrypt note\")",
+                    "target": "setTitle(\"加密笔记\")"
+                },
+                {
+                    "source": "setTitle(\"Decrypt note\")",
+                    "target": "setTitle(\"解密笔记\")"
+                },
+                {
+                    "source": "setTitle(\"New encrypted note\")",
+                    "target": "setTitle(\"新建加密笔记\")"
+                },
+                {
+                    "source": "setTitle(\"Change Password\")",
+                    "target": "setTitle(\"更改密码\")"
+                },
+                {
+                    "source": "setTitle(\"Lock & Close\")",
+                    "target": "setTitle(\"锁定并关闭\")"
+                },
+                {
+                    "source": "Notice(`Items cleared: ${e}`)",
+                    "target": "Notice(`已清除项目: ${e}`)"
+                },
+                {
+                    "source": "text:\"Typically, you'll use the same password every time.\"",
+                    "target": "text:\"通常，您每次都会使用相同的密码。\""
+                },
+                {
+                    "source": "text:\"Typically, you'll use the same password for each note within a folder.\"",
+                    "target": "text:\"通常，您会在文件夹中的每个笔记中使用相同的密码。\""
+                },
+                {
+                    "source": "text:\"Typically, each note will have a unique password.\"",
+                    "target": "text:\"通常，每个笔记都会有一个独特的密码。\""
+                },
+                {
+                    "source": "text:\"External File:\"",
+                    "target": "text:\"外部文件:\""
+                },
+                {
+                    "source": "text:\"When needed the password/key is read from one of these filepaths.\"",
+                    "target": "text:\"需要时从这些文件路径读取密码/密钥。\""
+                },
+                {
+                    "source": "name:\"Confirm Password:\"",
+                    "target": "name:\"确认密码:\""
+                },
+                {
+                    "source": "name:\"Encrypt Selection\"",
+                    "target": "name:\"加密选择\""
+                },
+                {
+                    "source": "name:\"Convert to or from an Encrypted note\"",
+                    "target": "name:\"转换为加密笔记或从加密笔记转换\""
+                },
+                {
+                    "source": "name:\"Create new encrypted note\"",
+                    "target": "name:\"创建新的加密笔记\""
+                },
+                {
+                    "source": "name:\"Lock and Close all open encrypted notes\"",
+                    "target": "name:\"锁定并关闭所有打开的加密笔记\""
+                },
+                {
+                    "source": "name:\"Clear Session Password Cache\"",
+                    "target": "name:\"清除会话密码缓存\""
+                }
+            ]
+        }
+    }
+}
