@@ -1,0 +1,174 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "file-cleaner-redux",
+        "version": "1.0.0",
+        "title": "File Cleaner Redux",
+        "description": "File Cleaner Redux Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.14.0",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "permanent",
+                    "target": "permanent"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "obsidian",
+                    "target": "obsidian"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "system",
+                    "target": "system"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Starting cleanup",
+                    "target": "Starting cleanup"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] lifecycle_double_unmount\n%cTried to unmount a component that was not mounted\nhttps://svelte.dev/e/lifecycle_double_unmount",
+                    "target": "%c[svelte] lifecycle_double_unmount\n%cTried to unmount a component that was not mounted\nhttps://svelte.dev/e/lifecycle_double_unmount"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] select_multiple_invalid_value\n%cThe \\`value\\` property of a \\`<select multiple>\\` element should be an array, but it received a non-array value. The selection will be kept as is.\nhttps://svelte.dev/e/select_multiple_invalid_value",
+                    "target": "%c[svelte] select_multiple_invalid_value\n%cThe \\`value\\` property of a \\`<select multiple>\\` element should be an array, but it received a non-array value. The selection will be kept as is.\nhttps://svelte.dev/e/select_multiple_invalid_value"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] state_proxy_unmount\n%cTried to unmount a state proxy, rather than a component\nhttps://svelte.dev/e/state_proxy_unmount",
+                    "target": "%c[svelte] state_proxy_unmount\n%cTried to unmount a state proxy, rather than a component\nhttps://svelte.dev/e/state_proxy_unmount"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "%c[svelte] svelte_boundary_reset_noop\n%cA \\`<svelte:boundary>\\` \\`reset\\` function only resets the boundary the first time it is called\nhttps://svelte.dev/e/svelte_boundary_reset_noop",
+                    "target": "%c[svelte] svelte_boundary_reset_noop\n%cA \\`<svelte:boundary>\\` \\`reset\\` function only resets the boundary the first time it is called\nhttps://svelte.dev/e/svelte_boundary_reset_noop"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Failed to hydrate: ",
+                    "target": "Failed to hydrate: "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Anno Domini",
+                    "target": "Anno Domini"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Before Christ",
+                    "target": "Before Christ"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "file",
+                    "target": "file"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "square",
+                    "target": "square"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(\"created at\")",
+                    "target": "error(\"created at\")"
+                },
+                {
+                    "source": "error(\"updated at\")",
+                    "target": "error(\"updated at\")"
+                },
+                {
+                    "source": "error(\"traced at\")",
+                    "target": "error(\"traced at\")"
+                },
+                {
+                    "source": "log(\n      `Iterating over ${admonitionCandidates.length} files with codeblocks`\n    )",
+                    "target": "log(\n      `Iterating over ${admonitionCandidates.length} files with codeblocks`\n    )"
+                },
+                {
+                    "source": "log(\n      `Found ${attachments.length} attachments in Admonition blocks in ${duration}ms.`\n    )",
+                    "target": "log(\n      `Found ${attachments.length} attachments in Admonition blocks in ${duration}ms.`\n    )"
+                },
+                {
+                    "source": "log(\n      `Found ${attachments.length} attachments in codeblocks in ${duration}ms.`\n    )",
+                    "target": "log(\n      `Found ${attachments.length} attachments in codeblocks in ${duration}ms.`\n    )"
+                },
+                {
+                    "source": "log(\n      `Found ${attachments.length} attachments in Ink blocks in ${duration}ms.`\n    )",
+                    "target": "log(\n      `Found ${attachments.length} attachments in Ink blocks in ${duration}ms.`\n    )"
+                },
+                {
+                    "source": "log(`Starting cleanup`)",
+                    "target": "log(`Starting cleanup`)"
+                },
+                {
+                    "source": "log(`Finished indexing after ${indexingDuration}ms`)",
+                    "target": "log(`Finished indexing after ${indexingDuration}ms`)"
+                },
+                {
+                    "source": "log(\n      `Found ${filesToRemove.length} files and ${foldersToRemove.length} folders to clean up.`\n    )",
+                    "target": "log(\n      `Found ${filesToRemove.length} files and ${foldersToRemove.length} folders to clean up.`\n    )"
+                },
+                {
+                    "source": "name: \"Anno Domini\"",
+                    "target": "name: \"Anno Domini\""
+                },
+                {
+                    "source": "name: \"Before Christ\"",
+                    "target": "name: \"Before Christ\""
+                },
+                {
+                    "source": "name = \"Svelte error\"",
+                    "target": "name = \"Svelte error\""
+                },
+                {
+                    "source": "textContent = \"\"",
+                    "target": "textContent = \"\""
+                },
+                {
+                    "source": "name: \"external-link\"",
+                    "target": "name: \"external-link\""
+                },
+                {
+                    "source": "name: \"file\"",
+                    "target": "name: \"file\""
+                },
+                {
+                    "source": "name: \"folder-open\"",
+                    "target": "name: \"folder-open\""
+                },
+                {
+                    "source": "name: \"square-check-big\"",
+                    "target": "name: \"square-check-big\""
+                },
+                {
+                    "source": "name: \"square\"",
+                    "target": "name: \"square\""
+                }
+            ]
+        }
+    }
+}
