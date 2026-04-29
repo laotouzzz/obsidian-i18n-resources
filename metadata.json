@@ -11,5 +11,18 @@
         "created_at": "2026-04-29T13:17:06.203Z",
         "updated_at": "2026-04-29T13:17:06.203Z",
         "type": "plugin"
+    },
+    {
+        "id": "wyimxzV-XeHzGXwjddm1Q7YTuIKSRRyw",
+        "plugin": "file-cleaner-redux",
+        "language": "zh-cn",
+        "version": "1.14.0",
+        "supported_versions": "1.14.0",
+        "title": "File Cleaner Redux",
+        "description": "File Cleaner Redux Localization & Tweaks",
+        "hash": "649b9aad649b9aad649b9aad649b9aad",
+        "created_at": "2026-04-29T13:44:15.608Z",
+        "updated_at": "2026-04-29T13:44:15.608Z",
+        "type": "plugin"
     }
 ]
