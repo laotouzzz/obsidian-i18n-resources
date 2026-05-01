@@ -24,5 +24,44 @@
         "created_at": "2026-04-29T13:44:15.608Z",
         "updated_at": "2026-04-29T13:44:15.608Z",
         "type": "plugin"
+    },
+    {
+        "id": "8WWg8Vkvv3e65o6-GaStkRn0I6JnusYZ",
+        "plugin": "obsidian-custom-attachment-location",
+        "type": "plugin",
+        "language": "zh-cn",
+        "version": "1.0.0",
+        "supported_versions": "10.3.4",
+        "title": "Custom Attachment Location",
+        "description": "Custom Attachment Location Localization & Tweaks",
+        "hash": "2cb336e12cb336e12cb336e12cb336e1",
+        "created_at": "2026-05-01T12:45:53.514Z",
+        "updated_at": "2026-05-01T12:45:53.514Z"
+    },
+    {
+        "id": "juobJ90jTyy-h2Mqp65Qx9xGCe0OugOU",
+        "plugin": "obsidian-html-plugin",
+        "type": "plugin",
+        "language": "zh-cn",
+        "version": "1.0.0",
+        "supported_versions": "1.0.13",
+        "title": "HTML Reader",
+        "description": "HTML Reader Localization & Tweaks",
+        "hash": "26c4ceac26c4ceac26c4ceac26c4ceac",
+        "created_at": "2026-05-01T12:45:53.509Z",
+        "updated_at": "2026-05-01T12:45:53.509Z"
+    },
+    {
+        "id": "od4x489NacvK9K3ND8Hhj7WGQyw904-v",
+        "plugin": "obsidian-importer",
+        "type": "plugin",
+        "language": "zh-cn",
+        "version": "1.0.0",
+        "supported_versions": "1.8.4",
+        "title": "Importer",
+        "description": "Importer Localization & Tweaks",
+        "hash": "664525a0664525a0664525a0664525a0",
+        "created_at": "2026-05-01T12:45:53.509Z",
+        "updated_at": "2026-05-01T12:45:53.509Z"
     }
 ]
